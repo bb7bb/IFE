@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			display: flex;
+			flex-direction: row;
+			padding: 200px 200px;
+		}
+		div{
+			width: 80px;
+			height: 80px;
+			border: 1px solid #999;
+			margin-left: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #999;
+		}
+		.div2{
+			transform: skewX(30deg);	/* 拉伸 */
+			-webkit-transform: skewX(30deg);
+			-ms-transform: skewX(30deg);
+			-moz-transform: skewX(30deg);
+		}
+		.div3{
+			transform: scaleX(0.5);		/* 缩放 */
+			-webkit-transform: scaleX(0.5);
+			-ms-transform: scaleX(0.5);
+			-moz-transform: scaleX(0.5);
+		}
+		.div4{
+			transform: rotate(45deg);	/* 旋转 */
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+		}
+		.div5{
+			transform: translate(10px,20px);	/* 偏移 */
+			-webkit-transform: translate(10px,20px);
+			-ms-transform: translate(10px,20px);
+			-moz-transform: translate(10px,20px);
+		}
+		.div6{
+			transform: skewX(30deg) scaleX(0.5) rotate(45deg) translate(10px,20px); /* 同时实现多种 */
+			-webkit-transform: skewX(30deg) scaleX(0.5) rotate(45deg) translate(10px,20px);
+			-ms-transform: skewX(30deg) scaleX(0.5) rotate(45deg) translate(10px,20px);		
+			-moz-transform: skewX(30deg) scaleX(0.5) rotate(45deg) translate(10px,20px);
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">div0</div>
+	<div class="div2">div1</div>
+	<div class="div3">div2</div>
+	<div class="div4">div3</div>
+	<div class="div5">div4</div>
+	<div class="div6">div5</div>
+</body>
+</html>
